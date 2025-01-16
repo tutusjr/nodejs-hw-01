@@ -2,8 +2,8 @@ import { readContacts } from '../utils/readContacts.js';
 
 export const getAllContacts = async () => {
   try {
-    await readContacts();
     console.log('Veriler Cekilldi');
+    return await readContacts();
   } catch (e) {
     console.error('hata', e);
   }
